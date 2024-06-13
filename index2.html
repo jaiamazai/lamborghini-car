@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body id="image-container" onclick="changeBackgroundImage()">
+<div class="main-page">
+        <nav>
+            <div class="dropdown">
+              <button onclick="toggleDropdown()" class="none">Dropdown</button>
+                <div class="dropdown-icon" onclick="toggleDropdown()">
+                    <img src="images/Lamborghini_Bull_RGB_White.png" width="45px"><span>Urus<br><p>SE</p></span>
+                    <i class="fa-solid fa-caret-down" id="dropdown-button"></i>
+                    <button>RIEPILOGO</button>
+                </div>
+                <div id="dropdown-content" class="dropdown-content">
+                    <div class="navbar">
+                        <div>
+                            <h4>Cambia Modello</h4>
+                            <p>Seleziona la vettura da configurare</p>
+                        </div>
+                        <div class="right-buttons">
+                            <button class="right-button">ANNULLA</button>
+                            <button class="left-button">CAMBIA MODELLO</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="content bg">
+                        <div class="overly"></div>
+                        <button class="bottom-button">REVUELTO</button>
+                        <button class="bottom-button Urus">URUS</button>
+                        <div class="images">
+                            <img src="images/4.png" alt="Image 1">
+                            <img src="images/5.png" alt="Image 2">
+                            <img src="images/6.png" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icons">
+                
+                <div class="menuA">
+                    <button onclick="togglePopup()" class="top"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="menu-button" id="menu-button"><i class="fa-solid fa-gear"></i></button>
+                    <div class="menu-content" id="menu-content">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cambia mercato</a>
+                        <hr>
+                        <a href="#"><i class="fa-solid fa-globe"></i> Cambia Lingua</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="icon">
+                <i class="fa-solid fa-layer-group"></i>
+                <i class="fa-solid fa-image"></i>
+                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-right-left"></i>
+            </div> -->
+
+            <div class="icon-container">
+                <div class="icon-box">
+                  <i class="fas fa-exchange-alt"></i>
+                  <span class="icon-text">Switch</span>
+                </div>
+                <div class="icon-box">
+                  <i class="fas fa-expand"></i>
+                  <span class="icon-text">Fullscreen</span>
+                </div>
+                <div class="icon-box">
+                  <i class="fas fa-th-large"></i>
+                  <span class="icon-text">Gallery</span>
+                </div>
+                <div class="icon-box">
+                  <i class="fas fa-camera"></i>
+                  <span class="icon-text">Camera</span>
+                </div>
+                <!-- <div class="icon-box">
+                  <i class="fas fa-arrows-alt"></i>
+                  <span class="icon-text">Resize</span>
+                </div> -->
+              </div>
+              <div class="popup" id="popup-1">
+                <div class="overly"></div>
+                    <div class="contect">
+                        <div class="closeBtn" onclick="togglePopup()">&times;</div>
+                     <div class="leftSide">
+                        <p class="p">L-Code</p>
+                        <p class="brown">N non è dunque possibile generare un L-Code. Si prega di riprovare a configurazione iniziata.</p>
+                        <h1>AJK4Y3</h1><i class="fa-regular fa-copy"></i>
+                        <button>CONTATTA UNA CONCESSIONARIA</button>
+                    </div>
+                    <div class="rightSide">
+                        <p class="bold">Carica una configurazione</p>
+                        <p class="brown">Inserisci il tuo L-Code per recuperare o modificare una precedente configurazione.</p>
+                        <input type="text" placeholder="Inserisci qui il tuo L-Code">
+                        <button class="btn3">CARICA CONFIGURAZIONE</button>
+                    </div>
+                </div>
+            </div>
+              
+
+          </nav>
+</div>
+        <div class="leftbar">
+             <div class="sidebar">
+              <div class="visible">
+                <div id="tab1" class="tab-content tab" style="display: block;">
+                <div class="menu">
+                  <div class="tab-buttons">
+                    <!-- <button onclick="openTab('tab1')" class="active">ESTERNI</button>
+                    <button onclick="openTab('tab2')">INTERNI</button>
+                    <button onclick="openTab('tab3')">OPTIONAL</button> -->
+                </div>
+                  <div class="menu-item active"><button onclick="openTab('tab1')" class="active">ESTERNI</button></div>
+                  <div class="menu-item"><button onclick="openTab('tab2')" id="changeBg" >INTERNI</button></div>
+                  <div class="menu-item"><button onclick="openTab('tab3')" >OPTIONAL</button></div>
+                </div> 
+             
+                 <p class="para">La tua configurazione parte da qui</p>
+                <div class="content" id="one1">
+                  <div class="item">
+                   <img src="images/ver.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Vernice</strong>
+                      <p>Scegli il colore della carrozzeria</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                   <img src="images/liv.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Cerchi e Pinze</strong>
+                      <p>Personalizza l'intero gruppo ruota</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                    <img src="images/ver.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Cerchi e Pinze</strong>
+                      <p>Personalizza l'intero gruppo ruota</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                    <img src="images/cer.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Cerchi e Pinze</strong>
+                      <p>Personalizza l'intero gruppo ruota</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                    <img src="images/car.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Tetto</strong>
+                      <p>Personalizza la parte superiore della vettura</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                    <img src="images/cer.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Carbonio</strong>
+                      <p>Dettagli che fanno la differenza</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                    <img src="images/cer.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Carbonio</strong>
+                      <p>Dettagli che fanno la differenza</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <button class="reset-button">RESET CONFIGURAZIONE</button>
+                </div> 
+                 </div>
+                </div>
+              </div>
+              
+              <div id="tab2" class="tab-content tab">
+                <div class="tab-buttons">
+                  <button onclick="openTab('tab1')" class="active">ESTERNI</button>
+                  <button onclick="openTab('tab2')">INTERNI</button>
+                  <button onclick="openTab('tab3')">OPTIONAL</button>
+              </div>
+                <!-- <div class="menu-item active"><button onclick="openTab('tab1')" class="active">ESTERNI</button></div>
+                <div class="menu-item"><button onclick="openTab('tab2')" >INTERNI</button></div>
+                <div class="menu-item"><button onclick="openTab('tab3')" >OPTIONAL</button></div> -->
+
+                <p class="para">La tua configurazione parte da qui</p>
+                <div class="content" id="one1">
+                  <div class="item">
+                   <img src="images/sec1.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Vernice</strong>
+                      <p>Scegli il colore della carrozzeria</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                   <img src="images/sec2.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Cerchi e Pinze</strong>
+                      <p>Personalizza l'intero gruppo ruota</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                    <img src="images/sec3.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Cerchi e Pinze</strong>
+                      <p>Personalizza l'intero gruppo ruota</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                    <img src="images/sec4.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Cerchi e Pinze</strong>
+                      <p>Personalizza l'intero gruppo ruota</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                    <img src="images/sec5.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Tetto</strong>
+                      <p>Personalizza la parte superiore della vettura</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                    <img src="images/sec6.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Carbonio</strong>
+                      <p>Dettagli che fanno la differenza</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="item">
+                    <img src="images/cer.png" alt="" width="62px">
+                    <div class="text">
+                      <strong>Carbonio</strong>
+                      <p>Dettagli che fanno la differenza</p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <button class="reset">RESET CONFIGURAZIONE</button>
+              </div>  
+              </div>
+
+                <div id="tab3" class="tab-content tab">
+                <div class="tab-buttons">
+                  <button onclick="openTab('tab1')" class="active">ESTERNI</button>
+                  <button onclick="openTab('tab2')">INTERNI</button>
+                  <button onclick="openTab('tab3')">OPTIONAL</button>
+              </div>
+                <!-- <div class="menu-item active"><button onclick="openTab('tab1')" class="active">ESTERNI</button></div>
+                <div class="menu-item"><button onclick="openTab('tab2')" >INTERNI</button></div>
+                <div class="menu-item"><button onclick="openTab('tab3')" >OPTIONAL</button></div> -->
+
+                  <div class="two_btn">
+                    <button class="btn1" class="active">EQUIPAGGIAMENTO</button>
+                    <button class="btn2"  class="active">ACCESSORI ORIGINALI</button>
+                  </div>
+                  <div class="scroll">
+                    <div class="left_arow " >
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <ul class="scrollable">
+                      <li><a href="#" class="active">All</a></li>
+                      <li><a href="#">ENTERTAINMENT</a></li>
+                      <li><a href="#">WARRANTY EXTENSIONS AND MAINTENANCE</a></li>
+                      <li><a href="#">ADVANCE DRIVING</a></li>
+                      <li><a href="#">CARE AND SAFETY</a></li>
+                      <li><a href="#">CONVENICE</a></li>
+                      <li><a href="#">ORIGINALI</a></li>
+                      <li><a href="#">ACCESSORI </a></li>
+                      <li><a href="#">SEATS</a></li>
+                      <li><a href="#">TRAILER TOW HITCH</a></li>
+                      <li><a href="#">TOP CAR</a></li>
+                    </ul>
+                    <div class="right_arow active">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                  <div class="containy scrollabl">
+                    <p>Entertainment</p>
+                    <div class="section">
+                        <label>
+                            <input type="checkbox">
+                        </label>
+                        <p>Radio DAB</p>
+                    </div>
+                
+                    <div class="section">
+                        <h1>Radio DAB con on play</h1>
+                        <label>
+                            <input type="checkbox">MEGGIROI INFORMATION
+                        </label>
+                    </div>
+                    <div class="section">
+                        
+                        <label>
+                            <input type="checkbox">SMOKING PACKEGE
+                        </label>
+                    </div>
+                    <div class="section">
+                        <h1>Radio DAB con on play</h1>
+                        <label>
+                            <input type="checkbox">TRAILER TOW HITCH
+                        </label>
+                    </div>
+                    <div class="section">
+                        <h1>Radio DAB con on play</h1>
+                        <label>
+                            <input type="checkbox">CARE AND SAFETY
+                        </label>
+                    </div>
+                    <div class="section">
+                        <h1>Radio DAB con on play</h1>
+                        <label>
+                            <input type="checkbox">MEGGIROI INFORMATION
+                        </label>
+                    </div>
+                    <div class="section">
+                        <h1>Radio DAB con on play</h1>
+                        <label>
+                            <input type="checkbox">WARRANTY EXTENSIONS AND MAINTENANCE
+                        </label>
+                    </div>
+                    <div class="section">
+                        <h1>Radio DAB con on play</h1>
+                        <label>
+                            <input type="checkbox">MEGGIROI INFORMATION
+                        </label>
+                    </div>
+                    <div class="section">
+                        <h1>Radio DAB con on play</h1>
+                        <label>
+                            <input type="checkbox">MEGGIROI INFORMATION
+                        </label>
+                    </div>
+                    <div class="section">
+                        <h1>Radio DAB con on play</h1>
+                        <label>
+                            <input type="checkbox">MEGGIROI INFORMATION
+                        </label>
+                    </div>
+                    <div class="section">
+                        
+                        <label>
+                            <input type="checkbox">MEGGIROI INFORMATION
+                        </label>
+                    </div>
+                    <div class="section">
+                        
+                        <label>
+                            <input type="checkbox">MEGGIROI INFORMATION
+                        </label>
+                    </div>
+              <button class="reset-tn ">1</button>
+                </div>
+            
+    
+              </div>  
+              </div>
+            </div>
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+    function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+};
+
+function toggleDropdown() {
+            var content = document.getElementById("dropdown-content");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                document.removeEventListener("click", hideDropdown);
+            } else {
+                content.style.display = "block";
+                setTimeout(() => {
+                document.addEventListener("click", hideDropdown);
+                }, 0);
+            }
+        }
+
+        function hideDropdown(event) {
+            var content = document.getElementById("dropdown-content");
+            if (!content.contains(event.target)) {
+              content.style.display = "none";
+              document.removeEventListener("click", hideDropdown);
+            }
+        }
+
+    let currentImageIndex = 0;
+    const images = [
+    'images/icons.jpg',
+    'images/dr1.jpg',
+    'images/dr2.jpg',
+    'images/dr3.jpg',
+    'images/dr4.jpg',
+    'images/dr5.jpg',
+    'images/dr6.jpg'
+];
+function changeBackgroundImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    document.getElementById('image-container').style.backgroundImage = `url(${images[currentImageIndex]})`;
+};
+
+
+    const menuButton = document.getElementById('menu-button');
+    const menuContent = document.getElementById('menu-content');
+    menuButton.addEventListener('click', () => {
+        if (menuContent.style.display === 'block') {
+            menuContent.style.display = 'none';
+            menuButton.innerHTML = '<i class="fa-solid fa-gear"></i>';
+        } else {
+            menuContent.style.display = 'block';
+            menuButton.innerHTML = '&#10006';
+        }
+    });
+  
+    document.addEventListener('click', (event) => {
+        if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+            menuContent.style.display = 'none';
+            menuButton.innerHTML = '<i class="fa-solid fa-gear"></i>';
+        }
+    });
+
+    function openTab(tabId) {
+        var i, tabcontent, tabbuttons;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tabbuttons = document.getElementsByClassName("tab-buttons")[0].getElementsByTagName("button");
+        for (i = 0; i < tabbuttons.length; i++) {
+            tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+        }
+        document.getElementById(tabId).style.display = "block";
+        event.currentTarget.className += " active";
+    };
+
+    document.getElementById('changeBg').addEventListener('click', function() {
+    document.body.style.backgroundImage = "url('images/change.jpg')";
+});
+
+    </script>
+</body>
+</html>

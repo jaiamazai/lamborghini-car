@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="contain">
+                <nav>
+                    
+                    
+                </nav>
+                
+                <div class="outer">
+                    <div class="detail">
+                        <h1><img src="images/text.svg" alt=""></h1>
+                        <p class="text-white text-base scroll-mr-6">The standard Lamborghini Urus combines high performance with everyday usability, making it a versatile Super SUV.</p>
+                        <button class="btn p-2 w-32 bg-neutral-50 rounded-xl mt-5 font-bold p-4"><a href="/index1.html">ESPLORA</a></button>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <div class="dropdown-icon" onclick="toggleDropdown()">
+                        <img src="images/Lamborghini_Bull_RGB_White.png" width="38px"><span>Revuelto</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div id="dropdown-content" class="dropdown-content">
+                        <div class="item">
+                            <img src="images/rev.png" alt="Image 1" class="item-image">
+                            <span class="item-text"><a href="index1.html">Revuelto</a></span>
+                        </div>
+                        <div class="item">
+                            <img src="images/dr.png" alt="Image 2" class="item-image">
+                            <span class="item-text"><a href="/index1.html">Urus</a></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <button class="Alert_msg"><i class="fa-solid fa-globe"></i></button>
+                <div class="contact_box">
+                    <div class="btn-box">
+                        <button class="icon_btn">&times;</button>
+                    </div>
+                    <h1 class="text-2xl font-black">Cambia Lingua</h1>
+                    <p>Selezionare la lingua del configuratore</p>
+                    <form action="#">
+                <ul>
+                    <li><img src="images/wp2044278.jpg" width="30px"><span>Japan</span><input type="radio" name="" id="" required></li>
+                    <hr>
+                    <li><img src="images/wp3996166.webp" width="30px"><span>Canada</span><input type="radio"></li>
+                    <hr>
+                    <li><img src="images/th (2).jpg" width="30px"><span>Malasyia</span><input type="radio" name="" id=""></li>
+                    <hr>
+                    <li><img src="images/png-clipart-flag-of-jordan-jordanian-dinar-money-international-for-immigration-services-globoprime-certificate-attestation-services-uae-japan-tourism-flag-business-thumbnail.png" width="30px"><span>Jordan</span><input type="radio"></li>
+                    <hr>
+                    <li><img src="images/th (3).jpg" width="30px"><span>Dominican</span><input type="radio" name="" id=""></li>
+                    <hr>
+                    <li><img src="images/usa-dominican-republic-realistic-half-flags-together-usa-dominican-republic-realistic-half-flags-together-realistic-123482993.webp" width="30px"><span>USA</span><input type="radio"></li>
+                    <hr>
+                    <li><img src="images/b457faca5bae53ca9a0aff8fdf444679.jpg" width="30px"><span>UK</span><input type="radio" name="" id=""></li>
+                    <hr>
+                    <!-- <li><img src="images/christian-lue-8Yw6tsB8tnc-unsplash-scaled.jpg" width="30px"><span>Christian</span><input type="radio"></li> -->
+                </ul>
+                  <div class="btns">
+                 <button class="bb border-inherit w-28">ANNULA</button>
+                <button class="gray">PROCEDI</button>
+                </div> 
+               </form>
+                </div>
+                
+                <button onclick="togglePopup()" class="vis"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="popup" id="popup-1">
+                    <div class="overly"></div>
+                        <div class="contect">
+                            <div class="closeBtn" onclick="togglePopup()">&times;</div>
+                         <div class="leftSide">
+                            <p class="font-bold">L-Code</p>
+                            <p class="bold">Nessuna configurazione disponibile</p>
+                            <p class="brown">Nessun modello specifico è stato ancora selezionato, non è dunque possibile generare un L-Code. Si prega di riprovare a configurazione iniziata.</p>
+                            <button class="btn3">CONTATTA UNA CONCESSIONARIA</button>
+                        </div>
+                         <div class="rightSide">
+                            <p class="bold">Carica una configurazione</p>
+                            <p class="brown">Inserisci il tuo L-Code per recuperare o modificare una precedente configurazione.</p>
+                            <input type="text" placeholder="Inserisci qui il tuo L-Code">
+                            <button class="btn3">CARICA CONFIGURAZIONE</button>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- <div class="form"> 
+                    <div class="box">
+                        <div class="btn">
+                            <button class="icon">&times;</button>
+                        </div>
+                        <h1 class="text-2xl font-black">Cambia Lingua</h1>
+                        <p>Selezionare la lingua del configuratore</p>
+                        <form action="#">
+                   
+                  
+                    </div>
+                    <button class="msg"><img src="images/search.svg" alt=""></button>
+                </div> -->
+               
+               
+            </div>
+       
+
+   
+    
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <div class="one">
+            <nav>
+                <div class="dropdown">
+                    <div class="dropdown-icon" onclick="toggleDropdown()">
+                        <img src="images/Lamborghini_Bull_RGB_White.png" width="20px"><span>Urus</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div id="dropdown-content" class="dropdown-content">
+                        <div class="item">
+                            <img src="images/rev.png" alt="Image 1" class="item-image">
+                            <span class="item-text"><a href="index1.html">Revuelto</a></span>
+                        </div>
+                        <div class="item">
+                            <img src="images/dr.png" alt="Image 2" class="item-image">
+                            <span class="item-text"><a href="/index1.html">Urus</a></span>
+                        </div>
+                    </div>
+                </div>
+                </nav>
+                <div class="btns">
+                    <button onclick="togglePopup()"><i class="fa-solid fa-globe"></i></button>
+                    <button onclick="togglePopup()" class="top"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="botom"><i id="moon-icon" class="icon fa-solid fa-moon"></i>
+                    <i id="sun-icon" class="icon hidden fa-solid fa-sun"></i></button>
+                </div>
+            <ul class="under">
+                <span>Urus SE</span>
+                <img src="images/1.png" class="white">
+                <span>performante</span>
+                <img src="images/2.png" class="image">
+                <span class="space">Urus</span>
+                <img src="images/3.png" class="imag">
+            </ul>
+        </div>
+        <div class="two" id="bd">
+        
+            <div class="navbar">
+            <div class="left"><h1>Urus</h1><span>SE</span></div>
+            <div class="right">
+                <a href=""><img src="" alt=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="btn">
+                <button class="btnBlack" id="changeBackgroundBt">AD PERSONAM - ARANCIO EGON</button>
+                <button class="black" id="changeBackgroundBtn">BASE OFFER - BIANCO MONOCERUS</button>
+            </div>
+            <div class="text">
+                <div><p>POWER</p><h3>800 CV</h3></div><span></span>
+                <div class="leftm"><p>MAX SPEED</p><h3>312 km/h</h3></div><span class="leftm"></span>
+                <div class="leftm more"><p>0-100 km/h</p><h3>3,4 s</h3></div>
+                <button><a href="index2.html">CONFIGURA</a></button>
+            </div>
+    </div>
+
+        <div class="body"></div>
+      
+    </div>
+        <div class="popup" id="popup-1">
+            <div class="overly"></div>
+                <div class="contect">
+                    <div class="closeBtn" onclick="togglePopup()">&times;</div>
+                 <div class="leftSide">
+                    <p>L-Code</p>
+                    <p class="bold">Nessuna configurazione disponibile</p>
+                    <p class="brown">Nessun modello specifico è stato ancora selezionato, non è dunque possibile generare un L-Code. Si prega di riprovare a configurazione iniziata.</p>
+                    <button class="btn3">CONTATTA UNA CONCESSIONARIA</button>
+                </div>
+                <div class="rightSide">
+                    <p class="bold">Carica una configurazione</p>
+                    <p class="brown">Inserisci il tuo L-Code per recuperare o modificare una precedente configurazione.</p>
+                    <input type="text" placeholder="Inserisci qui il tuo L-Code">
+                    <button class="btn3">CARICA CONFIGURAZIONE</button>
+                </div>
+            </div>
+        </div>
+        
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.contain{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    animation: animate 12s ease-in-out infinite;
+    background-size: cover;
+    background-position: center;
+} 
+
+
+.log{
+    width: 100%;
+    align-items: center;
+    height: 70px;
+    background-color: #000;
+}
+.log span{
+    position: relative;
+    color: white;
+    right: 70px;
+    top: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+
+}
+.log i{
+    color: white;
+}
+.log img{
+    width: 80px;
+    position: absolute;
+    left: 8px;
+    margin-top: 10px;
+}
+
+.outer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background: rgba(0,0, 0, 0.3);
+    text-align: center;
+}
+.detail{
+    margin: 200px auto;
+    display: inline-block;
+}
+.detail p{
+   font-size: 22px;
+   margin: 20px;
+   font-style: italic;
+   color: white;
+}
+@keyframes animate{
+    0%,100%{
+        background-image: url(images/2018_novitec_lamborghini_aventador_s_11_2560x1440.jpg);
+    }
+    25%,75%{
+        background-image: url(images/2022_lamborghini_aventador_lp_780-4_ultimae_33_2560x1440.jpg);
+    }
+    25%,50%{
+        background-image: url(images/usue=r.jpg);
+    }
+    0%,50%{
+        background-image: url(images/urus...jpg);
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 18%;
+    height: 75px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: #000;
+   
+}
+ .logo i{
+    color: white;
+    align-items: center;
+    margin-left: 200px;
+}
+.logo span{
+    color: white;
+    padding-left: 125px;
+    margin-top: 50px;
+}
+.logo img{
+    width: 90px;
+    margin-left: 10px;
+}
+.left-button img{
+    width: 30px;
+}
+.left-button{
+    flex-direction: column;
+    margin-right: 20px;
+}
+.left-button button{
+    margin: 5px;
+    background-color: #b4a78d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.margin{
+    position: relative;
+    top: 9px;
+}
+#Show{
+    display: none;
+    background-color: #181717;
+}
+ /* #login-model{
+    position: absolute;
+    left: 35vw;
+    bottom: 4vw;
+    top: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 520px;
+    width: 470px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px ,2px ,2px ,10px solid black;
+} */
+.outer h1{
+    font-size: 60px;
+    color: white;
+    font-family: "Potta One", system-ui;
+    font-weight: bold;
+    font-style: italic;
+}
+.outer button{
+    padding: 8px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+.outer button a{
+    text-decoration: none;
+    color: rgb(12, 10, 10);
+}
+.outer button:hover{
+    background-color: gray;
+    color: white;
+}
+form{
+    display: flex;  
+    margin: 40px;
+    position: absolute;
+    left: 100px;
+}
+.contact_box h2,p{
+    position: relative;
+    right: 80px;
+}
+.contact_box h1{
+   margin: 10px;
+   font-weight: bold;
+   font-size: 25px;
+}
+.contact_box p{
+    color: darkgray;
+    margin-left: 100px;
+    font-size: 13px;
+}
+form ul li{
+    position: relative;
+    right: 75px;
+    display: inline;
+    flex-direction: column;
+}
+form hr{
+    margin-right: 100px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   bottom: 25px;
+}
+ul li span{
+    position: relative;
+    bottom: 25px;
+    left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-weight: bold;
+}
+form input{
+    margin-left: 330px;
+    display: inline;
+    position: relative;
+    bottom: 20px; 
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    
+}
+.btns{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #4d4848;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.gray{
+    background-color: #c9bbbb;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+}
+form.w-28{
+    border: 1px solid black;
+}
+/* .btns button{
+    padding: 10px;
+} */
+.cantainer{
+    position: absolute;
+    top: 50%;
+    display: none;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 410px;
+}
+.cantainer .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.Show-btn{
+background-color: #181717;
+
+}
+.contact_box{
+    left: 33%;
+    border-radius: 10px;
+    bottom: 2%;
+    position: absolute;
+    width: 450px;
+    height: 570px;
+    background-color: white;
+}
+.btn-box{
+    position: absolute;
+    right: 10px;
+    color: white;
+    background-color: #000;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.Alert_msg img{
+    width: 23px;
+}
+.Alert_msg{
+    top: 14px;
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    left: 95%;
+    color: white;
+}
+.icon_btn{
+    width: 40px;
+    font-size: 30px; 
+}
+.btn-box button{
+    width: 50px;
+}
+.bb{
+    border: 1px solid black;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+.bb:hover{
+    background-color: #000;
+    color: white;
+}
+
+
+
+
+
+.dropdown {
+    width: 250px;
+    height: 70px;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-icon {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.dropdown-icon img{
+    position: relative;
+    /* right: 10px; */
+}
+.dropdown-icon span{
+    margin-right: 30px;
+    font-style: normal;
+    color: #f8f8f7;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+}
+.dropdown-icon i{
+    margin-right: 20px;
+    font-size: 13px;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    background-color: #181717;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+}
+.item {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+}
+.item:hover {
+    background-color: #ddd;
+}
+.item-image {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+.item-text {
+    font-size: 16px;
+}
+
+#showButton{
+    position: absolute;
+}
+
+.All{
+    position: absolute;
+}
+.con_box{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+}
+.bttn_box{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    left: 100px;
+}
+.icon{
+    position: absolute;
+    
+}
+
+
+
+
+
+
+.popup .overly{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.popup .contect{
+    background-color: white; 
+    width: 53vw;
+    border-radius: 20px;
+    height: 57vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 22%;
+    left:25%;
+    transform: translate(-1%,-1%) scale(0);
+    
+}
+
+.popup .closeBtn{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.closeBtn:hover{
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+}
+.popup.active .overly{
+   display: block;
+}
+.popup.active .contect{
+    transition: all 300ms ease-in-out;
+    transform: translate(-1%,-1%) scale(1);
+}
+.bold{ 
+     font-size: 18px;
+     font-weight: bold;
+    font-family: sans-serif;
+    
+    width: 300px;
+}
+.font-bold{
+    font-weight: bolder;
+    margin: 15px;
+    font-size: 30px;
+    
+    
+}
+/* 
+.brown{
+    color: grey;
+    margin-top: 20px;
+}
+
+.rightSide{
+    background-color: aqua;
+    width: 350px;
+    margin-left: 20px;
+}
+.rightSide input{
+    height: 40px;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+.btn3{
+    width: 300px;
+    height: 40px;
+    margin-top: 25px;
+    background-color: rgb(192, 170, 170);
+    font-weight: bold;
+    color: #585151;
+    border: none;
+    border-radius: 10px;
+} */
+
+
+.vis{
+    position: relative;
+    top: 65px;
+    position: absolute;
+    background-color:black;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    left: 95%;
+    color: white;
+}
+.closeBtn{
+    padding-left: 10px;
+    
+}
+.contect{
+    display: flex;
+    justify-content: space-between;
+}
+.rightSide{
+    width: 360px;
+    padding-left: 100px;
+}
+.leftSide p{
+    font-size: 15px;
+    
+}
+.leftSide{
+  width: 360px;
+  padding-left: 100px;
+}
+.leftSide button{
+    margin-top: 100px;
+    font-weight: 500;
+    background-color: #c9bbbb;
+    color: #4d4848;
+    position: relative;
+    right: 80px;
+    border-radius: 8px;
+    width: 120%;
+    height: 43px;
+}
+.rightSide button{
+    margin-top: 20px;
+    font-weight: 500;
+    background-color: #c9bbbb;
+    color: #4d4848;
+    position: relative;
+    right: 80px;
+    border-radius: 8px;
+    width: 120%;
+    height: 43px;
+}
+.rightSide input{
+    margin-top: 10px;
+    position: relative;
+    right: 80px;
+    border-radius: 8px;
+    width: 120%;
+    padding-left: 10px;
+    font-size: 10px;
+    height: 43px;
+    border: 1px solid gray;
+}
+.rightSide p{
+    margin-top: 50px;
+}
+.brown{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.detail button a{
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    bottom: 15px;
+}
+.detail button{
+    height: 45px;
+    margin-top: 30px;
+    align-items: center;
+    width: 130px;
+}
